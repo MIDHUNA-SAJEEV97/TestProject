@@ -1,5 +1,6 @@
 /*url : https://demo.guru99.com/test/newtours/index.php Test case 
 
+
  * 1 : verify the application is correctly opens while hiting the url. 
  * Test case 2 : verify the logo (Mercury Tours) is displayed or not.
  *  Test case 3 : verify the successful SIGN-ON 
