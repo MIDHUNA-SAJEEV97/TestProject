@@ -18,13 +18,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class KeyBoardAndMouseHandling {
 	WebDriver driver;
   @Test
-  public void verifyEnteredMessage() {
+  public void verifyEnteredMessage() throws InterruptedException {
 	  
 	  WebElement enterMessage=driver.findElement(By.xpath("//input[@id='single-input-field']"));
 	  Actions action=new Actions(driver);
-	  action.keyDown(Keys.SHIFT).build().perform();
+	  action.keyDown(Keys.SHIFT).build().perform();    //keypress
 	  enterMessage.sendKeys("hii");
-	  action.keyUp(Keys.SHIFT).build().perform();
+	  action.keyUp(Keys.SHIFT).build().perform();       //shiftkey release
+	  
+	/*  action.keyDown(Keys.TAB).build().perform();
+	  action.keyUp(Keys.TAB).build().perform();
+	  action.keyDown(Keys.ENTER).build().perform();
+	  action.keyUp(Keys.ENTER).build().perform(); */
+	  
 	  
 	  action.sendKeys(Keys.TAB).build().perform();      //tab key press
 	 // action.sendKeys(Keys.ENTER).build().perform();

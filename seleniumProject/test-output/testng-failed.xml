@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGassignments.Assignment6Table">
+      <class name="executeClass.LoginPageExecuteClassAssignment8">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="verifyAddedProductIsAvailableOrNotInTheTable"/>
           <include name="afterMethod"/>
+          <include name="verifyRememberMeCheckBoxSelectedByDefault"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testNGassignments.Assignment6Table -->
+      </class> <!-- executeClass.LoginPageExecuteClassAssignment8 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -52,8 +52,6 @@ public class Assignment6Table {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[@class='menu-text'])[2]"))); // explicit
 		
-		
-		
 		WebElement addProduct = driver.findElement(By.xpath("//button[@type='button' and @class='btn btn-add btn-lg']"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;																									// wait
 		js.executeScript("arguments[0].scrollIntoView()", addProduct);
